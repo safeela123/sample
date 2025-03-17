@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/vault_delete.css' %}">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+        <div class="logo">IMAGE VAULT</div>
+        <div class="searchbar">
+            <input type="text" placeholder="search" class="search">
+        </div>
+        <div class="services">
+            <ul>
+                <li>home</li> 
+                <li>contact</li>
+                <li>about</li>
+                </ul>
+            </div>
+        </div>
+            <div class="sidebar">
+                <table>
+                    
+                    <tr> <td></td><td>Dashboard</td></tr>
+                    <tr><td></td><td>Posts</td></tr>
+                    <tr><td></td><td><a href="../logout" style="text-decoration:none;color:white">logout</a></td></tr>
+                    <tr><td></td><td>Media</td></tr>
+                    <tr><td></td><td>Library</td></tr>
+                    <tr><td></td><td>Pages</td></tr>
+                    <tr><td></td><td>Comments</td></tr>
+                    <tr><td></td><td>Contact</td></tr>
+                    <tr><td></td><td><a href="../main" style="text-decoration:none;color:white">go back</a></td></tr>
+                    <tr><td></td><td>Appearence</td></tr>
+                    <tr><td></td><td>Settings</td></tr>
+                </table>
+                </div>
+                <form method="post">
+            <div class="upload" style="transform:translate(200px,-550px);width:1000px;height:500px;margin-right:20px">
+            
+           
+                    {% for i in data %}
+                <div class="output">
+                <p><a href="{{i.document.url}}"><img src="{% static 'images/folder_image.png'%}"  alt="{{i.document}}" style="height:60px;"></a></p>
+                <p>{{i.describe}}</p><p><a href="../delete/{{i.id}}" style="text-decoration:none;border:2px solid black;padding:2px;border-radius:5px;color:black;background-color:rgb(103, 187, 103)">delete</a></p>
+            </div> 
+                    {% endfor %}
+                 
+            </div>
+        </form>
+        </div>
+</body>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'css/vault_log.css' %}" >
+</head>
+<body>
+    <div class="main">
+        <img src="{% static 'images/background.jpg' %}">
+    
+        <div class="sub">
+        <div class="logbox">
+            <form action="../" method="post">
+                {% csrf_token %}
+            <p class="head">LOGIN</p>
+            <input type="email" placeholder="email" id="" name="email"><br>
+            <input type="password" placeholder="password" name="password" id=""><br>
+            <input type="submit" value="login" class="button" style="background-color:black;color:white;text-align:center"><br>
+            <p style="text-align:center">don't have an account ? <a href="../register">register</a></p>
+        </form>
+</body>
+</html>

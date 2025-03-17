@@ -1,0 +1,84 @@
+
+.main{
+    height:90vh;
+}
+.nav{
+    width:85em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80px;
+    background-color:black;
+    color:white;
+    transform:translate(-5px,-10px); 
+}
+.sidebar{
+    background-color:black;
+    color:white;
+    line-height:45px;
+    width:200px;
+    text-align:justify;
+    transform:translate(-5px,-30px);
+    height:90vh;
+    
+}
+
+.logo{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:600;
+  }
+  .searchbar{
+    flex:2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .search{
+    width:60%;
+    height:30px;
+    border-radius:1px;
+    padding-left:10px;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  } 
+  .services{
+    flex:2;
+    display:flex;
+    justify-content:center;
+  }
+ .services ul{
+    display:flex;
+    list-style-type:none;
+    width:100%;
+    justify-content:space-evenly;
+    font-size:18px;
+  
+ }
+.add{
+  height:50px;
+  width:50px;
+  border-radius:10px;
+  background-color:aqua;
+  display:flex;
+  position:absolute;
+  right:10px;
+  bottom:5px;
+  align-items:center;
+  justify-content:center;
+  border:2px solid black;
+
+}
+.upload{
+   display:flex;
+}
+.output{
+  text-align:center;
+  width:150px;
+ 
+}
